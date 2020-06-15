@@ -4,10 +4,253 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="image/x-icon" href="icons/descarga.png">
-    <title>Document</title>
+    <title>Artistas - Historia Arte (HA!)</title>
+    <link rel="shortcut icon" href="icons/descarga.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="font/Archia_Regular/Archia Regular Webfont/stylesheet.css">
 </head>
 <body>
-    
+    <div class="grid">
+        <header class="header">
+            <div class="nav-container">
+                <div class="button-ha">
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="42" height="24" viewBox="0 0 350 200" class="svg-line">
+                            <rect x="0" y="0" width="60" height="350" fill="#00324d"></rect>
+                            <line x1="40" y1="100" x2="110" y2="100" stroke="#00324d" stroke-width="60" />
+                            <rect x="100" y="0" width="60" height="300" fill="#00324d"/>
+                            <line x1="120" y1="130" x2="250" y2="130" stroke="#00324d" stroke-width="60" />
+                            <rect class="skewed" x="150" y="0" width="60" height="300" fill="#00324d"/>
+                            <rect x="300" y="2" width="60" height="100" fill="#00324d"/>
+                            <rect x="300" y="150" width="60" height="50" fill="#00324d"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="search-ha">
+                    <form class="form-search" action="https://historia-arte.com" method="get">
+                        <button class="btn-search">
+                            <img src="icons/busqueda.svg" alt="search icon">
+                        </button>
+                        <label for="search">Buscar</label>
+                        <input type="text" id="search" placeholder="Buscar">
+                            <nav class="hide-list">
+                                <h3>MENU</h3>
+                                <ul>
+                                    <li><a>Obras</a></li>
+                                    <li><a>Artistas</a></li>
+                                    <li><a>Articulos</a></li>
+                                    <li><a>Entrevistas</a></li>
+                                    <li><a>Movimientos</a></li>
+                                    <li><a>Tecnicas</a></li>
+                                    <li><a>Paises</a></li>
+                                    <li><a>Museos</a></li>
+                                </ul>
+                            </nav>
+                    </form>
+                </div>
+            </div>
+        </header>
+        <div class="main">
+            <div class="grid2-aside">
+                <a href="">
+                    <h1 class="h1-block"><strong>Artistas</strong> populares hoy</h1>
+                </a>
+            </div>
+            <div class="grid2-3">
+                <div>
+                    <article class="size">
+                        <a class="article-inline" href="">
+                            <div class="img-block">
+                                <img src="img/vangogh.jpg" alt="vangogh selfportrait">
+                            </div>
+                            <div class="p-block">
+                                <h2 class="painter-name">Vincent Van Gogh</h2>
+                                <p>Paises Bajos, 1853-1890</p>
+                                <meter value="222" max="222" title="222"></meter> 
+                            </div>
+                        </a>
+                    </article>
+                </div>
+                <div>
+                    <article class="size">
+                        <a class="article-inline" href="">
+                            <div class="img-block">
+                                <img src="img/duchamp.jpg" alt="duchamp painting">
+                            </div>
+                            <div class="p-block">
+                                <h2 class="painter-name">Marcel Duchamp</h2>
+                                <p>Francia, 1887-1968</p>
+                                <meter max="222" value="133"  title="133"></meter> 
+                            </div> 
+                        </a>
+                    </article>
+                </div>
+                <div>
+                    <article class="size">
+                        <a class="article-inline" href="">
+                            <div class="img-block">
+                                <img src="img/kandinsky.jpg" alt="kandinsky portrait">
+                            </div>
+                            <div class="p-block">
+                                <h2 class="painter-name">Wassily Kandinsky</h2>
+                                <p>Rusia, 1866-1944</p>
+                                <meter value="105" max="222" title="105"></meter>  
+                            </div>
+                        </a>
+                    </article>
+                </div>
+                <div>
+                    <article class="size">
+                        <a class="article-inline" href="">
+                            <div class="img-block">
+                                <img src="img/caravaggio.jpg" alt="caravaggio portrait">
+                            </div>
+                            <div class="p-block">
+                                <h2 class="painter-name">Caravaggio</h2>
+                                <p>Italia, 1571-1610</p>
+                                <meter value="116" max="222" title="116"></meter>  
+                            </div>
+                        </a>
+                    </article>
+                </div>
+                <div>
+                    <article class="size">
+                        <a class="article-inline" href="">
+                            <div class="img-block">
+                                <img src="img/picasso.jpg" alt="picasso selfportrait">
+                            </div>
+                            <div class="p-block">
+                                <h2 class="painter-name">Pablo Picasso</h2>
+                                <p>España, 1881-1973</p>
+                                <meter value="131" max="222" title="131"></meter>
+                            </div>  
+                        </a>
+                    </article>
+                </div>
+                <div>
+                    <article class="size">
+                        <a class="article-inline" href="">
+                            <div class="img-block">
+                                <img src="img/goya.jpg" alt="goya painting">
+                            </div>
+                            <div class="p-block">
+                                <h2 class="painter-name">Francisco de Goya</h2>
+                                <p>España, 1746-1828</p>
+                                <meter value="113" max="222" title="113"></meter>  
+                            </div>
+                        </a>
+                    </article>
+                </div>
+                <div>
+                    <article class="size">
+                        <a class="article-inline" href="">
+                            <div class="img-block">
+                                <img src="img/frida.jpg" alt="khalo panting">
+                            </div>
+                            <div class="p-block">
+                                <h2 class="painter-name">Frida Khalo</h2>
+                                <p>México, 1907-1954</p>
+                                <meter value="108" max="222" title="108"></meter>  
+                            </div>
+                        </a>
+                    </article>
+                </div>
+                <div>
+                    <article class="size">
+                        <a class="article-inline" href="">
+                            <div class="img-block">
+                                <img src="img/pollock.jpg" alt="pollock painting">
+                            </div>
+                            <div class="p-block">
+                                <h2 class="painter-name">Jackson Pollock</h2>
+                                <p>Estados Unidos, 1912-1956</p>
+                                <meter value="78" max="222" title="78"></meter>  
+                            </div>
+                        </a>
+                    </article>
+                </div>
+                <div>
+                    <article class="size">
+                        <a class="article-inline" href="">
+                            <div class="img-block">
+                                <img src="img/dali.png" alt="dali painting">
+                            </div>
+                            <div class="p-block">
+                                <h2 class="painter-name">Salvador Dalí</h2>
+                                <p>España, 1904-1989</p>
+                                <meter value="83" max="222" title="83"></meter>  
+                            </div>
+                        </a>
+                    </article>
+                </div>
+                <div>
+                    <article class="size">
+                        <a class="article-inline" href="">
+                            <div class="img-block">
+                                <img src="img/cezanne.jpg" alt="cezanne portrait">
+                            </div>
+                            <div class="p-block">
+                                <h2 class="painter-name">Paul Cézanne</h2>
+                                <p>Francia, 1839-1906</p>
+                                <meter value="116" max="222" title="116"></meter>  
+                            </div>
+                        </a>
+                    </article>
+                </div>
+                <div>
+                    <article class="size">
+                        <a class="article-inline" href="">
+                            <div class="img-block">
+                                <img src="img/mondrian.jpg" alt="mondrian portrait">
+                            </div>
+                            <div class="p-block">
+                                <h2 class="painter-name">Piet Mondrian</h2>
+                                <p>Paises Bajos, 1872-1944</p>
+                                <meter value="90" max="222" title="90"></meter>  
+                            </div>
+                        </a>
+                    </article>
+                </div>
+                <div>
+                    <article class="size">
+                        <a class="article-inline" href="">
+                            <div class="img-block">
+                                <img src="img/matisse.jpg" alt="matisse portrait">
+                            </div>
+                            <div class="p-block">
+                                <h2 class="painter-name">Henri Matisse</h2>
+                                <p>Francia, 1869-1954</p>
+                                <meter value="116" max="222" title="116"></meter>  
+                        </div>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="">Acerca de HA!</a>
+                        <a href="">Obras</a>
+                        <a href="">Artistas</a>
+                        <a href="">Articulos</a>
+                        <a href="">Entrevistas</a>
+                        <a href="">Movimientos</a>
+                        <a href="">Técnicas</a>
+                        <a href="">Países</a>
+                        <a href="">Museos</a>
+                    </li>
+                </ul>
+                <div>
+                    <a href=""><i></i></a>
+                    <a href=""><i></i></a>
+                    <a href=""><i></i></a>
+                    <a href=""><i></i></a>
+                    <a href=""><i></i></a>
+                </div>
+            </nav>
+        </footer>
+    </div>
 </body>
 </html>
