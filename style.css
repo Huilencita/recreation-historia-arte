@@ -33,7 +33,6 @@ body {
 h1, h2, h3, p, a, li, label, input {
     font-family: 'archiaregular', sans-serif;
     color: #00324d;
-    font-weight: 100;
 }
 
 /* SVG STYLE */
@@ -80,28 +79,39 @@ ul li {
     border: 1px solid #00324d;
     border-top: none;
     width: 4rem;
+    cursor: pointer;
+}
+
+
+
+.button-ha a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .button-ha:hover {
     background-color: #00324d;
-    
 }
 
-svg:hover {
+
+
+.a-hover:hover svg {
     background-color: #00324d;
 }
 
-svg:hover > rect {
-    fill: #f9f7ec;
-    
-}
-svg:hover > line {
+svg:hover .svg-content{
     stroke: #f9f7ec;
-    
+    fill: #f9f7ec;
 }
-.button-ha a {
-    margin: auto;
-    align-self: center;
+
+svg.svg-line {
+    padding: 19px 11px;
+}
+.a-hover:hover svg:hover line{
+    fill: #f9f7ec;
 }
 
 .form-search {
@@ -134,6 +144,18 @@ svg:hover > line {
     border-bottom: 1px solid #00324d;
 }
 
+
+.search-ha:hover .form-search  {
+    background-color: white;
+}
+
+.search-ha:hover .btn-search {
+    background-color: white;
+}
+
+.search-ha:hover  #search {
+    background-color: white;
+}
 .form-search label {
     display: none;
     width: auto;
@@ -147,8 +169,10 @@ svg:hover > line {
     background-color:  #f9f7ec;
     font-weight: bolder;
     font-size: 16px;
-    
+}
 
+.form-search input:focus .form-search {
+    max-width: 42rem;
 }
 
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
@@ -181,6 +205,7 @@ svg:hover > line {
 
 .grid2-aside {
     grid-area: grid2-aside;
+    height: fit-content;
 }
 
 .grid2-3 {
@@ -214,10 +239,33 @@ svg:hover > line {
     font-weight: bold;
 }
 
+.img-block {
+    overflow: hidden;
+    min-width: fit-content;
+}
+
 .img-block img {
     height: 100%;
     object-fit: cover;
     width: fit-content;
+    filter: saturate(0%);
+    transition: 0.3s ease all;
+}
+
+.size a {
+    transition: background-color .3s,filter .3s,-webkit-filter .3s;
+}
+
+.size a:hover {
+    background-color: #fff;
+    transition: 0.3s ease-out;
+}
+
+.size a:hover img {
+    transform: scale(1.2);
+    filter: saturate(100%);
+    
+    
 }
 
 .h1-block {
@@ -228,6 +276,7 @@ svg:hover > line {
     font-size: 1.5em;
     margin-top: 0rem;
     margin-right: 2rem;
+    margin-bottom: 1em;
 
 
 }
@@ -254,4 +303,101 @@ meter {
 meter::-webkit-meter-optimum-value {
     background: #00324d;
 
+}
+
+.button {
+    width: 17px;
+    height: 17px;
+    padding: .6rem;
+    border: 1px solid #00324d;
+    display: block;
+}
+
+.a-aside {
+    display: block;
+}
+
+.a-aside:hover .button  {
+    background-color: #00324d;
+}
+
+.a-aside:hover .svg-button  {
+    fill: #f9f7ec;
+}
+
+.a-aside:hover .svg-button  {
+    stroke: #f9f7ec;
+}
+
+
+
+/* FOOTER STYLES*/
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    position: sticky;
+}
+
+.footer-ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-ul li a {
+    margin: 1rem;
+    font-weight: bolder;
+
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+.media-logo {
+    width: auto;
+    display: flex;
+    margin-right: 1rem;
+}
+footer .media-logo a {
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+}
+
+i {
+    font-size: 28px;
+}
+
+.media-logo a+a {
+    border-left: none;
+}
+
+.media-logo a:hover i {
+    color: #fff;
+}
+
+.facebook-icon:hover {
+    background-color: #3b5998;
+}
+
+.twitter-icon:hover {
+    background-color: #1da1f2;
+}
+
+.pinterest-icon:hover {
+    background-color: #bd081c;
+}
+
+.instagram-icon:hover {
+    background-color: #e4405f;
+}
+
+.telegram-icon:hover {
+    background-color: #2ca5e0;
 }
