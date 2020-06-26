@@ -171,9 +171,7 @@ svg.svg-line {
     font-size: 16px;
 }
 
-.form-search input:focus .form-search {
-    max-width: 42rem;
-}
+
 
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color: #00324d;
@@ -401,3 +399,108 @@ i {
 .telegram-icon:hover {
     background-color: #2ca5e0;
 }
+
+.is-focused input:focus {
+        outline: none;
+}
+
+
+.is-focused {
+    width: 500px;
+}
+
+
+
+@media all and (max-width: 320px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 4rem 1fr 4rem;
+        column-gap: 2rem;
+        row-gap: 2rem;
+        grid-template-areas: 
+            "header"
+            "main"
+            "footer";
+        align-content: center;
+    }
+
+    
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    .grid2-3 {
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-columns: auto;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .grid {
+    display: grid;
+    grid-template-columns: 0 1fr 0;
+    grid-template-rows: 4rem 1fr 4rem;
+    column-gap: 2rem;
+    row-gap: 6rem;
+    grid-template-areas: 
+        "header header header"
+        ". main ."
+        "footer footer footer";
+    min-height: 100vh;
+    width: 100%;
+    align-content: center;
+    }
+
+    .main {
+        display: grid;
+        grid-template-rows: 4rem 1fr 4rem;
+        column-gap: 2rem;
+        row-gap: 6rem;
+        grid-template-areas: 
+            "header header"
+            "grid2-aside grid2-3"
+            "footer footer";
+        min-height: 100vh;
+        width: 100%;
+        align-content: center;
+    }
+    
+    .grid2-3 {
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-columns: auto;
+    }
+    
+}
+
+@media all and (min-width: 1024px) {
+    /*.grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 4rem 1fr 4rem;
+        column-gap: 2rem;
+        row-gap: 2rem;
+        grid-template-areas: 
+            "header"
+            "main"
+            "footer";
+        align-content: center;
+    }
+
+    
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    .grid2-3 {
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-columns: auto;
+    }
+}
+*/
