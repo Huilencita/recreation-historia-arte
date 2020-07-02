@@ -11,3 +11,4 @@ searchInput.addEventListener('focus', function (e) {
 searchInput.addEventListener('blur', function (e) {
     parent.classList.remove("is-focused");
 });
+

@@ -12,6 +12,7 @@
 </head>
 <body>
     <div class="grid">
+<!--HEADER-->
         <header class="header">
             <div class="nav-container">
                 <div class="button-ha">
@@ -33,24 +34,33 @@
                             <img src="icons/busqueda.svg" alt="search icon">
                         </button>
                         <label for="search">Buscar</label>
-                        <input type="text" id="search" tabindex="-1" placeholder="Buscar">
-                            <nav class="hide-list">
-                                <h3>MENU</h3>
-                                <ul>
-                                    <li><a>Obras</a></li>
-                                    <li><a>Artistas</a></li>
-                                    <li><a>Articulos</a></li>
-                                    <li><a>Entrevistas</a></li>
-                                    <li><a>Movimientos</a></li>
-                                    <li><a>Tecnicas</a></li>
-                                    <li><a>Paises</a></li>
-                                    <li><a>Museos</a></li>
-                                </ul>
-                            </nav>
+                        <button type="button" class="button-close">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="63" height="17" viewBox="0 0 17 17">
+                              <line x1="0" y1="17" x2="17" y2="0" stroke="#00324d" stroke-width="1"/>
+                              <line x1="0" y1="0" x2="17" y2="17" stroke="#00324d" stroke-width="1"/>
+                            </svg>
+                        </button>
+                        <input type="text" id="search" tabindex="-1" placeholder="Buscar"autocomplete="off">
                     </form>
+                    <div class="hide-list">
+                        <div class="hide-list--relative">
+                            <h3 class="h3-right">MENU</h3>
+                            <ul>
+                                <li class="non-bordertop"><a>Obras</a></li>
+                                <li><a>Artistas</a></li>
+                                <li><a>Articulos</a></li>
+                                <li><a>Entrevistas</a></li>
+                                <li><a>Movimientos</a></li>
+                                <li><a>Tecnicas</a></li>
+                                <li><a>Paises</a></li>
+                                <li><a>Museos</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>
+<!--MAIN-->
         <div class="main">
             <div class="grid2-aside">
                 <a class="a-aside" href="https://historia-arte.com/artistas?page=1">
@@ -234,6 +244,7 @@
                 </div>
             </div>
         </div>
+<!--FOOTER-->
         <footer class="footer">
             <nav class="footer-nav">
                 <ul class="footer-ul">
@@ -247,22 +258,22 @@
                         <a href="https://historia-arte.com/artistas">Artistas</a>
                     </li>
                     <li>
-                        <a href="https://historia-arte.com/articulos">Articulos</a>
-                    </li>
-                    <li>
-                        <a href="https://historia-arte.com/entrevistas">Entrevistas</a>
-                    </li>
-                    <li>
-                        <a href="https://historia-arte.com/movimientos">Movimientos</a>
-                    </li>
-                    <li>
-                        <a href="https://historia-arte.com/tecnicas">Técnicas</a>
-                    </li>
-                    <li>
-                        <a href="https://historia-arte.com/paises">Países</a>
-                    </li>
-                    <li>
-                        <a href="https://historia-arte.com/museos">Museos</a>
+                        <a class="responsive-mobile responsive-tablet" href="https://historia-arte.com/articulos">Articulos</a>
+                    </li> 
+                    <li> 
+                        <a class="responsive-mobile" href="https://historia-arte.com/entrevistas">Entrevistas</a>
+                    </li> 
+                    <li> 
+                        <a class="responsive-mobile" href="https://historia-arte.com/movimientos">Movimientos</a>
+                    </li> 
+                    <li> 
+                        <a class="responsive-mobile" href="https://historia-arte.com/tecnicas">Técnicas</a>
+                    </li> 
+                    <li> 
+                        <a class="responsive-mobile" href="https://historia-arte.com/paises">Países</a>
+                    </li> 
+                    <li> 
+                        <a class="responsive-mobile" href="https://historia-arte.com/museos">Museos</a>
                     </li>
                 </ul>
             </nav>
@@ -273,7 +284,6 @@
                 <a class="instagram-icon" href="https://www.instagram.com/historia.del.arte/"><i class="fab fa-instagram"></i></a>
                 <a class="telegram-icon" href="https://t.me/historia_arte/"><i class="fab fa-telegram"></i></a>
             </div>
-            
         </footer>
     </div>
     <script type="text/javascript" src="js.js"></script>
